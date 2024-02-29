@@ -12,3 +12,13 @@ env:
 script:
   - python manage.py migrate
   - python manage.py test
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: "us-east-1"
+  app: "example-app-name"
+  env: "example-app-environment"
+  bucket_name: "the-target-S3-bucket"
+
