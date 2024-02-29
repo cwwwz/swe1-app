@@ -18,7 +18,6 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: "us-east-1"
-  app: "example-app-name"
-  env: "example-app-environment"
-  bucket_name: "the-target-S3-bucket"
-
+  app: "wanzhao-hw-app"
+  env: "wanzhao-hw-env"
+  bucket_name: "elasticbeanstalk-us-east-1-891377257918"
