@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-7i3#az+zhhmbvhucy0mk9lafl61251ylh)==0g^c1e*nlf2s+g"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['wanzhao-hw-env.eba-zd7ptkqp.us-east-1.elasticbeanstalk.com']
 
