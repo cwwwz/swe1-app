@@ -3,20 +3,16 @@ language: python
 python:
   - "3.8"
 
-services:
-  - sqlite3
-
 install:
   - pip install -r requirements.txt
 
 env:
-  - DJANGO_SETTINGS_MODULE="ebdjango.settings"
+  - DJANGO_SETTINGS_MODULE=ebdjango.settings
 
 script:
   - black --check .
   - flake8 .
   - python manage.py migrate
-  - python manage.py test
   - coverage run manage.py test
   - coverage report
 after_success:
