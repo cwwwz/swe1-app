@@ -16,6 +16,7 @@ script:
   - coverage run manage.py test
   - coverage report
 after_success:
+  - echo "Coveralls token length: ${#COVERALLS_REPO_TOKEN}"
   - coveralls
 
 deploy:
