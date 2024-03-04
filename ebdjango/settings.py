@@ -26,7 +26,10 @@ SECRET_KEY = "django-insecure-7i3#az+zhhmbvhucy0mk9lafl61251ylh)==0g^c1e*nlf2s+g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['wanzhao-hw-env.eba-zd7ptkqp.us-east-1.elasticbeanstalk.com', '127.0.0.1']
+ALLOWED_HOSTS = [
+    "wanzhao-hw-env.eba-zd7ptkqp.us-east-1.elasticbeanstalk.com",
+    "127.0.0.1",
+]
 
 
 # Application definition
@@ -107,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = 'America/New_York'
+TIME_ZONE = "America/New_York"
 
 USE_I18N = True
 
@@ -118,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "static/"
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
